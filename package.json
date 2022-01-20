@@ -1,0 +1,18 @@
+{
+  "name": "francois-world",
+  "author": "Francois Pallies",
+  "version": "0.1.0",
+  "private": true,
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Francois-Pallies/building_francoisWorld.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}

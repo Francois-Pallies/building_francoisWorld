@@ -89,7 +89,7 @@ class Person extends GameObject {
     }
 
 
-     updateSprite() {
+    updateSprite() {
       if (this.movingProgressRemaining > 0) {
         this.sprite.setAnimation("walk-"+this.direction);
         return;
