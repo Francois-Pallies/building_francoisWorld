@@ -153,14 +153,14 @@ class OverworldMap {
         maman: new Person({
           x: utils.withGrid(2),
           y: utils.withGrid(4),
-          src: "assets/images/characters/people/1986maman.png",  
+          src: "assets/images/characters/people/1986maman2.png",  
           direction: "playing",
           animationFrameLimit: 32        
         }),
         papa: new Person({
           x: utils.withGrid(9),
           y: utils.withGrid(4),
-          src: "assets/images/characters/people/1986papa.png",
+          src: "assets/images/characters/people/1986papa2.png",
           direction: "playing",
           animationFrameLimit: 64       
         }),
