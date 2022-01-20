@@ -8,7 +8,6 @@ class GameObject {
         this.sprite = new Sprite({
             /* animations: config.animations, */
             animationFrameLimit: config.animationFrameLimit,
-            animation: this.animations,
             gameObject: this,
             src: config.src || "assets/images/characters/people/hero_francois.png",
         });
