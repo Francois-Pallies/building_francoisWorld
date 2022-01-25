@@ -46,7 +46,7 @@ class Overworld {
     }
    
     init() {
-      this.map = new OverworldMap(window.OverworldMaps.Museum);
+      this.map = new OverworldMap(window.OverworldMaps.Museum2);
       this.map.mountObjects();
 
 /*         console.log(this.map.walls);

@@ -112,7 +112,59 @@ class OverworldMap {
         })
       }
     },
-    
+    Museum2: {
+      lowerSrc: "assets/images/francois_world/maps/Museum_Lower.png",
+      upperSrc: "assets/images/francois_world/maps/Museum_Upper.png",
+      gameObjects: {
+        hero: new Person({
+          isPlayerControlled: true, 
+          direction: "up",
+          x: utils.withGrid(57),
+          y: utils.withGrid(36),
+        }),
+        francoisBebe: new Person({
+          x: utils.withGrid(42),
+          y: utils.withGrid(30),
+          src: "assets/images/characters/people/npc2.png",
+          animationFrameLimit: 32,       
+          behaviorLoop: [
+            {type: "walk", direction: "left"},
+            {type: "stand", direction: "down", time: 1000},
+            {type: "stand", direction: "up", time: 3000},
+            {type: "stand", direction: "left", time: 1500},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "left"},
+            {type: "walk", direction: "right"},
+            {type: "stand", direction: "down", time: 3000},
+            {type: "walk", direction: "down"},
+            {type: "stand", direction: "down", time: 3000},
+            {type: "stand", direction: "right", time: 3000},
+            {type: "stand", direction: "down", time: 3000},
+            {type: "walk", direction: "left"},
+            {type: "stand", direction: "down", time: 3000},
+            {type: "stand", direction: "right", time: 3000},
+            {type: "stand", direction: "down", time: 3000},
+            {type: "stand", direction: "up", time: 3000},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "up"},
+          ]
+        }),
+        maman: new Person({
+          x: utils.withGrid(39),
+          y: utils.withGrid(30),
+          src: "assets/images/characters/people/1986maman2.png",  
+          direction: "playing",
+          animationFrameLimit: 32        
+        }),
+        papa: new Person({
+          x: utils.withGrid(46),
+          y: utils.withGrid(30),
+          src: "assets/images/characters/people/1986papa2.png",
+          direction: "playing",
+          animationFrameLimit: 64       
+        })
+      }
+    },
     Museum: {
       lowerSrc: "assets/images/francois_world/maps/whoamiMuseum_lowerLayer.png",
       upperSrc: "assets/images/francois_world/maps/whoamiMuseum_upperLayer.png",
