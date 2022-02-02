@@ -123,7 +123,7 @@ class OverworldMap {
           y: utils.withGrid(36),
         }),
         francoisBebe: new Person({
-          x: utils.withGrid(42),
+          x: utils.withGrid(43),
           y: utils.withGrid(30),
           src: "assets/images/characters/people/npc2.png",
           animationFrameLimit: 32,       
@@ -150,14 +150,14 @@ class OverworldMap {
           ]
         }),
         maman: new Person({
-          x: utils.withGrid(39),
+          x: utils.withGrid(40),
           y: utils.withGrid(30),
           src: "assets/images/characters/people/1986maman2.png",  
           direction: "playing",
           animationFrameLimit: 32        
         }),
         papa: new Person({
-          x: utils.withGrid(46),
+          x: utils.withGrid(47),
           y: utils.withGrid(30),
           src: "assets/images/characters/people/1986papa2.png",
           direction: "playing",
