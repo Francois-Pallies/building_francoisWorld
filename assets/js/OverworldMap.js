@@ -122,6 +122,7 @@ class OverworldMap {
           x: utils.withGrid(57),
           y: utils.withGrid(36),
         }),
+        //Tableau 1
         francoisBebe: new Person({
           x: utils.withGrid(43),
           y: utils.withGrid(30),
@@ -162,6 +163,59 @@ class OverworldMap {
           src: "assets/images/characters/people/1986papa2.png",
           direction: "playing",
           animationFrameLimit: 64       
+        }),
+        //Tableau 2
+        francoisTrompette: new Person({
+          x: utils.withGrid(33),
+          y: utils.withGrid(30),
+          src: "assets/images/characters/people/francois_trompette.png",
+          direction: "playingTrumpet",
+          animationFrameLimit: 32
+        }),
+        //Tableau 3
+        lqdrJess: new Person({
+          x: utils.withGrid(23),
+          y: utils.withGrid(29),
+          src: "assets/images/characters/people/lqdrJess.png",
+          direction: "playing",
+          animationFrameLimit: 32
+        }),
+        lqdrBaptiste: new Person({
+          x: utils.withGrid(21),
+          y: utils.withGrid(30),
+          src: "assets/images/characters/people/lqdrBaptiste.png",
+          direction: "playingGuitare",
+          animationFrameLimit: 16
+        }),
+        lqdrFrancois: new Person({
+          x: utils.withGrid(23),
+          y: utils.withGrid(31),
+          src: "assets/images/characters/people/lqdrFrancois.png",
+          animationFrameLimit: 16,
+          behaviorLoop: [
+            {type: "stand", direction: "working", time: 5000},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "up"},
+            {type: "walk", direction: "left"},
+            {type: "walk", direction: "left"},
+            {type: "walk", direction: "left"},
+            {type: "stand", direction: "bassPlaying", time: 8000},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "right"},
+            {type: "walk", direction: "down"},
+            {type: "walk", direction: "left"},
+            {type: "walk", direction: "left"},
+            {type: "walk", direction: "left"},
+            {type: "walk", direction: "left"},
+            {type: "walk", direction: "left"},
+            {type: "walk", direction: "left"},
+          ]
         })
       }
     },

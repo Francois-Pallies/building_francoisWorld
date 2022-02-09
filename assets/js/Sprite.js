@@ -20,21 +20,25 @@ class Sprite {
   
       //Configure Animation & Initial State
       this.animations = config.animations || {
-        "idle-down" :   [ [0,0] ],
-        "idle-right":   [ [0,1] ],
-        "idle-up"   :   [ [0,2] ],
-        "idle-left" :   [ [0,3] ],
-        "idle-playing": [ [0,0], [1,0]],
-        "walk-down" :   [ [3,0],[4,0],[3,0],[0,0],[1,0],[2,0],[1,0],[0,0] ],
-        "walk-right":   [ [3,1],[4,1],[3,1],[0,1],[1,1],[2,1],[1,1],[0,1] ],
-        "walk-up"   :   [ [1,2],[2,2],[1,2],[0,2],[3,2],[4,2],[3,2],[0,2] ],
-        "walk-left" :   [ [3,3],[4,3],[3,3],[0,3],[1,3],[2,3],[1,3],[0,3] ],
+        "idle-down" :           [ [0,0] ],
+        "idle-right":           [ [0,1] ],
+        "idle-up"   :           [ [0,2] ],
+        "idle-left" :           [ [0,3] ],
+        "idle-playing":         [ [0,0],[1,0] ],
+        "idle-playingTrumpet":  [ [0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[0,0],[1,0],[2,0],[6,0],[7,0],[8,0] ],
+        "idle-playingGuitare":  [ [0,0],[1,0],[2,0],[3,0] ],
+        "idle-working":         [ [0,4],[1,4] ],
+        "idle-bassPlaying":     [ [0,5],[1,5],[2,5],[3,5] ],
+        "walk-down" :           [ [3,0],[4,0],[3,0],[0,0],[1,0],[2,0],[1,0],[0,0] ],
+        "walk-right":           [ [3,1],[4,1],[3,1],[0,1],[1,1],[2,1],[1,1],[0,1] ],
+        "walk-up"   :           [ [1,2],[2,2],[1,2],[0,2],[3,2],[4,2],[3,2],[0,2] ],
+        "walk-left" :           [ [3,3],[4,3],[3,3],[0,3],[1,3],[2,3],[1,3],[0,3] ],
 
       }
       this.currentAnimation =  config.currentAnimation || "playing-music" ;
       this.currentAnimationFrame = 0;
   
-      this.animationFrameLimit = config.animationFrameLimit || 4;
+      this.animationFrameLimit = config.animationFrameLimit || 8;
       this.animationFrameProgress = this.animationFrameLimit;
 
       //Reference the game object
