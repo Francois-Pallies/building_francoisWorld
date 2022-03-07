@@ -10,6 +10,7 @@ class GameObject {
             animationFrameLimit: config.animationFrameLimit,
             gameObject: this,
             src: config.src || "assets/images/characters/people/hero_francois.png",
+            useShadow: config.useShadow
         });
 
         this.behaviorLoop = config.behaviorLoop || [];

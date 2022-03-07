@@ -3,9 +3,6 @@ class OverworldMap {
       this.gameObjects = config.gameObjects;
       this.walls = config.walls || {};
 
-/*       //Essai murs
-      this.roomWalls = config.roomWalls || {};
-   */
       this.lowerImage = new Image();
       this.lowerImage.src = config.lowerSrc;
 
@@ -84,7 +81,7 @@ class OverworldMap {
           x: utils.withGrid(5),
           y: utils.withGrid(6),
         }),
-/*         npc1: new Person({
+      /*  npc1: new Person({
           x: utils.withGrid(7),
           y: utils.withGrid(9),
           src: "assets/images/characters/people/npc1.png"
@@ -92,38 +89,22 @@ class OverworldMap {
       }
     },
     
-    Kitchen: {
-      lowerSrc: "assets/images/maps/KitchenLower.png",
-      upperSrc: "assets/images/maps/KitchenUpper.png",
-      gameObjects: {
-        hero: new GameObject({
-          x: 3,
-          y: 5,
-        }),
-        npcA: new GameObject({
-          x: 9,
-          y: 6,
-          src: "assets/images/characters/people/npc2.png"
-        }),
-        npcB: new GameObject({
-          x: 10,
-          y: 8,
-          src: "assets/images/characters/people/npc3.png"
-        })
-      }
-    },
     Museum2: {
       lowerSrc: "assets/images/francois_world/maps/Museum_Lower.png",
       upperSrc: "assets/images/francois_world/maps/Museum_Upper.png",
       gameObjects: {
         hero: new Person({
+          useShadow: true,
           isPlayerControlled: true, 
           direction: "up",
-          x: utils.withGrid(57),
-          y: utils.withGrid(36),
+          x: utils.withGrid(8),
+          y: utils.withGrid(23),
+      /*  x: utils.withGrid(57),
+          y: utils.withGrid(36), */
         }),
         //Tableau 1
         francoisBebe: new Person({
+          useShadow: true,
           x: utils.withGrid(43),
           y: utils.withGrid(30),
           src: "assets/images/characters/people/npc2.png",
@@ -151,6 +132,7 @@ class OverworldMap {
           ]
         }),
         maman: new Person({
+          useShadow: true,
           x: utils.withGrid(40),
           y: utils.withGrid(30),
           src: "assets/images/characters/people/1986maman2.png",  
@@ -166,6 +148,7 @@ class OverworldMap {
         }),
         //Tableau 2
         francoisTrompette: new Person({
+          useShadow: true,
           x: utils.withGrid(33),
           y: utils.withGrid(30),
           src: "assets/images/characters/people/francois_trompette.png",
@@ -175,12 +158,13 @@ class OverworldMap {
         //Tableau 3
         lqdrJess: new Person({
           x: utils.withGrid(23),
-          y: utils.withGrid(29),
+          y: utils.withGrid(29.5),
           src: "assets/images/characters/people/lqdrJess.png",
           direction: "playing",
           animationFrameLimit: 32
         }),
         lqdrBaptiste: new Person({
+          useShadow: true,
           x: utils.withGrid(21),
           y: utils.withGrid(30),
           src: "assets/images/characters/people/lqdrBaptiste.png",
@@ -188,6 +172,7 @@ class OverworldMap {
           animationFrameLimit: 16
         }),
         lqdrFrancois: new Person({
+          useShadow: true,
           x: utils.withGrid(23),
           y: utils.withGrid(31),
           src: "assets/images/characters/people/lqdrFrancois.png",
@@ -214,9 +199,131 @@ class OverworldMap {
             {type: "walk", direction: "left"},
             {type: "walk", direction: "left"},
             {type: "walk", direction: "left"},
-            {type: "walk", direction: "left"},
+            {type: "walk", direction: "left"} 
           ]
-        })
+        }),
+        //Tableau 4
+        saberFrancois: new Person({
+          useShadow: true,
+          x: utils.withGrid(13),
+          y: utils.withGrid(30),
+          src: "assets/images/characters/people/saberFrancois.png",
+          direction: "playingSaber",
+          animationFrameLimit: 8,
+        }),
+        //Tableau 5
+        celebration1: new Person({
+          x: utils.withGrid(6),
+          y: utils.withGrid(17),
+          src:"assets/images/characters/people/celebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        celebration2: new Person({
+          x: utils.withGrid(8),
+          y: utils.withGrid(17),
+          src:"assets/images/characters/people/celebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        celebration3: new Person({
+          x: utils.withGrid(10),
+          y: utils.withGrid(17),
+          src:"assets/images/characters/people/celebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        celebration4: new Person({
+          x: utils.withGrid(6),
+          y: utils.withGrid(19),
+          src:"assets/images/characters/people/celebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        celebration5: new Person({
+          x: utils.withGrid(8),
+          y: utils.withGrid(19),
+          src:"assets/images/characters/people/celebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        celebration6: new Person({
+          x: utils.withGrid(10),
+          y: utils.withGrid(19),
+          src:"assets/images/characters/people/celebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        celebration7: new Person({
+          x: utils.withGrid(6),
+          y: utils.withGrid(21),
+          src:"assets/images/characters/people/celebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        francoisCelebrate: new Person({
+          useShadow: true,
+          x: utils.withGrid(8),
+          y: utils.withGrid(21),
+          src: "assets/images/characters/people/francoisCelebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        celebration8: new Person({
+          x: utils.withGrid(10),
+          y: utils.withGrid(21),
+          src:"assets/images/characters/people/celebrate.png",
+          direction: "celebrate",
+          animationFrameLimit: 16
+        }),
+        //Tableau 6
+        francoisMPTDM: new Person ({
+          useShadow: true,
+          x: utils.withGrid(15),
+          y: utils.withGrid(21),
+          src: "assets/images/characters/people/francoisMPTDM.png",
+          direction: "marching",
+          animationFrameLimit: 64
+        }),
+        flag: new Person ({
+          x: utils.withGrid(16),
+          y: utils.withGrid(19),
+          src: "assets/images/francois_world/objects/flag.png",
+          direction: "flag",
+          animationFrameLimit: 16
+        }) 
+      },
+      walls: {
+        //Murs Extérieurs
+        ...utils.generateWall(false)(2,52)(22),
+        ...utils.generateWall(false)(53,61)(21),
+        ...utils.generateWall(false)(62,107)(22),
+
+        ...utils.generateWall(true)(22,35)(108),
+
+        ...utils.generateWall(false)(4,55)(36),
+        ...utils.generateWall(false)(55,59)(37),
+        ...utils.generateWall(false)(59,107)(36),
+        ...utils.generateWall(true)(16,36)(3),
+
+        //Murs intérieurs
+          //Gauche
+        ...utils.generateWall(false)(10,51)(26),
+        ...utils.generateWall(true)(26,32)(51),
+        ...utils.generateWall(false)(10,51)(32),
+        ...utils.generateWall(true)(32,26)(10),
+
+          //Centre
+        ...utils.generateWall(false)(55,59)(26),
+        ...utils.generateWall(true)(26,32)(59),
+        ...utils.generateWall(false)(55,59)(32),
+        ...utils.generateWall(true)(26,32)(55),
+
+          //Droite
+        ...utils.generateWall(false)(63,101)(26),
+        ...utils.generateWall(true)(26,32)(101),
+        ...utils.generateWall(false)(63,101)(32),
+        ...utils.generateWall(true)(26,32)(63),
       }
     },
     Museum: {
@@ -272,11 +379,6 @@ class OverworldMap {
         }),
 
       },
-/* //Essai mur perso
-      roomWalls: {
-        [utils.roomWalls(0,39,11,11)] : true,
-      },
- */
       walls: {
         //Mur Gauche
         [utils.asGridCoord(-1,7)] : true,
@@ -289,7 +391,7 @@ class OverworldMap {
         [utils.asGridCoord(39,9)] : true,
         [utils.asGridCoord(39,10)] : true,
         //Mur Bas pièce
-       /*  [utils.asGridCoord(0,11)] : true,
+        [utils.asGridCoord(0,11)] : true,
         [utils.asGridCoord(1,12)] : true,
         [utils.asGridCoord(2,11)] : true,
         [utils.asGridCoord(3,11)] : true,
@@ -327,7 +429,7 @@ class OverworldMap {
         [utils.asGridCoord(35,11)] : true,
         [utils.asGridCoord(36,11)] : true,
         [utils.asGridCoord(37,11)] : true,
-        [utils.asGridCoord(38,11)] : true, */
+        [utils.asGridCoord(38,11)] : true,
         //Mur vitré
         [utils.asGridCoord(0,6)] : true,
         [utils.asGridCoord(1,6)] : true,

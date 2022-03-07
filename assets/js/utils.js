@@ -2,16 +2,30 @@ const utils = {
     withGrid(n) {
         return n * 32;
     },
+    
     asGridCoord(x,y) {
         return `${x*32},${y*32}`;
     },
 
-/*     //Essai mur
-    roomWalls(startX, endX, startY, endY) {
-        console.log([`StartX:${startX},EndX:${endX}`],[`StartY:${startY},EndY:${endY}`]);
-        return [`${startX},${endX}`],[`${startY},${endY}`];
+    generateWall(vertical){
+        return (start, end) => (staticCoord, acc = {}) => {
+            const x = vertical ? staticCoord : start
+            const y = vertical ? start : staticCoord
+          
+            const newAcc = {
+              ...acc,
+              [utils.asGridCoord(x, y)]: true
+            }
+          
+            if (start === end) {
+                return newAcc
+            }
+          
+            const newCoord = start < end ? start + 1 : start - 1
+            
+            return utils.generateWall(vertical)(newCoord, end)(staticCoord, newAcc)
+          }
     },
-    //Fin Essai mur */
     
     nextPosition(initialX, initialY, direction) {
         let x = initialX;

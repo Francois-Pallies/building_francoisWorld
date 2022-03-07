@@ -10,7 +10,7 @@ class Sprite {
   
       //Shadow
       this.shadow = new Image();
-      this.useShadow = true; //config.useShadow || false
+      this.useShadow = config.useShadow || false
       if (this.useShadow) {
         this.shadow.src = "assets/images/characters/shadow64x64.png";
       }
@@ -27,7 +27,11 @@ class Sprite {
         "idle-playing":         [ [0,0],[1,0] ],
         "idle-playingTrumpet":  [ [0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[0,0],[1,0],[2,0],[6,0],[7,0],[8,0] ],
         "idle-playingGuitare":  [ [0,0],[1,0],[2,0],[3,0] ],
+        "idle-playingSaber":    [ [0,0],[1,0],[0,0],[4,0],[3,0],[2,0],[4,0],[3,0],[2,0],[1,0],[0,0],[1,0],[2,0],[3,0],[4,0],[2,0],[3,0],[4,0],[1,0] ],
         "idle-working":         [ [0,4],[1,4] ],
+        "idle-celebrate":       [ [0,0],[1,0],[2,0],[3,0] ],
+        "idle-marching":        [ [0,0],[1,0] ],
+        "idle-flag":            [ [0,0],[1,0],[2,0],[3,0] ],
         "idle-bassPlaying":     [ [0,5],[1,5],[2,5],[3,5] ],
         "walk-down" :           [ [3,0],[4,0],[3,0],[0,0],[1,0],[2,0],[1,0],[0,0] ],
         "walk-right":           [ [3,1],[4,1],[3,1],[0,1],[1,1],[2,1],[1,1],[0,1] ],
