@@ -97,10 +97,10 @@ class OverworldMap {
           useShadow: true,
           isPlayerControlled: true, 
           direction: "up",
-          x: utils.withGrid(8),
-          y: utils.withGrid(23),
-      /*  x: utils.withGrid(57),
-          y: utils.withGrid(36), */
+      /*     x: utils.withGrid(8),
+          y: utils.withGrid(23), */
+       x: utils.withGrid(57),
+          y: utils.withGrid(36),
         }),
         //Tableau 1
         francoisBebe: new Person({
