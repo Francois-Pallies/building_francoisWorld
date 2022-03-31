@@ -38,9 +38,7 @@ class Overworld {
         this.map.drawUpperImage(this.ctx, cameraPerson);
    
    
-        requestAnimationFrame(() => {
-         step();   
-        })
+        window.setTimeout(step, 10)
       }
       step();
     }
